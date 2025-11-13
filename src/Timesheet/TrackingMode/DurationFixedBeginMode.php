@@ -28,7 +28,7 @@ final class DurationFixedBeginMode implements TrackingModeInterface
 
     public function canEditBegin(): bool
     {
-        return false;
+        return true;
     }
 
     public function canEditEnd(): bool
@@ -74,6 +74,6 @@ final class DurationFixedBeginMode implements TrackingModeInterface
 
     public function getEditTemplate(): string
     {
-        return 'timesheet/edit-default.html.twig';
+        return 'timesheet/edit-duration-only.html.twig';
     }
 }
