@@ -246,7 +246,7 @@ final class TimesheetTeamController extends TimesheetAbstractController
 
     protected function canSeeStartEndTime(): bool
     {
-        return true;
+        return parent::canSeeStartEndTime();
     }
 
     protected function getQueryNamePrefix(): string

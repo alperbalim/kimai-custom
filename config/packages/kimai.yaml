@@ -34,7 +34,7 @@ kimai:
         # time_increment: ~
 
         # The time-tracking mode that should be used.
-        # mode: default
+        mode: duration_fixed_begin
 
         # The default time to pre-fill the "create timesheet" form (in some cases).
         # This setting is only respected by some time-tracking modes and not in all situations.
@@ -42,7 +42,7 @@ kimai:
         # Accepted formats, see
         # - https://www.php.net/manual/en/datetime.formats.php
         # - https://www.php.net/manual/en/datetime.formats.time.php
-        # default_begin: now
+        default_begin: '00:00'
 
         # Rounding rules are used to round the begin & end dates and the duration for timesheet records.
         # The "default" rule will round "begin" down and "end" up to the full minute, the "duration" will not be rounded.
